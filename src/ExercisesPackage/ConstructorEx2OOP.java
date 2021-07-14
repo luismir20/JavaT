@@ -14,18 +14,20 @@ class EmployeeHw {
 	}
 	void AddSal(int salary) {
 		if (salary < 500) {
-			System.out.println("Salary with added credit: " + (salary + 10));
+			this.salary = salary + 10;
+			System.out.println("Salary with added credit: " + this.salary);
 		} else {
 			this.salary = salary;
-			System.out.println("No salary increase, salary will be: " + salary);
+			System.out.println("No salary increase");
 		}
 	}
-	void AddWork(int salary) {
+	void AddWork(int hoursworked) {
 		if (hoursworked > 6) {
-			System.out.println("Salary with added credit: " + (salary + 5));
+			this.salary = this.salary + 5;
+			System.out.println("Salary with added credit: " + this.salary);
 		} else {
 			this.salary = salary;
-			System.out.println("No salary increase, salary will be: " + salary);
+			System.out.println("No salary increase");
 		}
 	}
 }
